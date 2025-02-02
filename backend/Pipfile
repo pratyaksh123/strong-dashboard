@@ -1,0 +1,18 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+flask = "*"
+requests = "*"
+gunicorn = "*"
+flask-apscheduler = "*"
+python-dotenv = "*"
+aiohttp = "*"
+pandas = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"
