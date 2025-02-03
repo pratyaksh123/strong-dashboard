@@ -2,9 +2,10 @@
 
 export async function POST(req) {
     const { email, password } = await req.json();
+    const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL || 'http://127.0.0.1:5000';  // Fallback to localhost
   
     try {
-      const response = await fetch('http://127.0.0.1:5000/get_access_token', {
+      const response = await fetch(`${API_BASE_URL}/get_access_token`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password }),
