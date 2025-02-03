@@ -12,6 +12,7 @@ SQUAT_PATH = os.path.join(DATA_DIR, "Squat (Barbell).csv")
 OVERHEAD_PRESS_PATH = os.path.join(DATA_DIR, "Strict Military Press (Barbell).csv")
 WEEKLY_VOLUME_PATH = os.path.join(DATA_DIR, "Weekly_volume.csv")
 BODYWEIGHT_PATH = os.path.join(DATA_DIR, "Bodyweight.csv")
+FIREBASE_ADMIN_PATH = os.path.join(BASE_DIR, "firebase_admin.json")
 
 # API Base URL
 STRONG_API_BASE_URL = "https://back.strong.app"

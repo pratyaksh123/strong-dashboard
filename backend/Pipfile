@@ -11,6 +11,7 @@ flask-apscheduler = "*"
 python-dotenv = "*"
 aiohttp = "*"
 pandas = "*"
+firebase-admin = "*"
 
 [dev-packages]
 
