@@ -66,7 +66,7 @@ Your application should now be running at `http://localhost:3000`!
 
 ## 🌟 Open Source Contributions Welcome!
 
-We love contributions from the open-source community! Whether you're fixing bugs, adding new features, or improving documentation, your help is appreciated.
+I love contributions from the open-source community! Whether you're fixing bugs, adding new features, or improving documentation, your help is appreciated. Add new charts, stats, or features to the dashboard to help users track their lifting progress. You can also improve the UI/UX, add animations, or enhance the user experience! 
 
 ### How to Contribute:
 1. **Fork** this repository.
