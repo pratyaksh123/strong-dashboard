@@ -248,21 +248,21 @@ export default function Dashboard() {
   return (
     <ThemeProvider theme={materialTheme}>
       <div
-        className={`p-8 min-h-screen ${
+        className={`p-4 sm:p-6 lg:p-8 min-h-screen ${
           theme === "light"
             ? "bg-gray-100 text-black"
             : "bg-gray-900 text-white"
         }`}
       >
-        <div className="flex justify-between items-center mb-6">
-          <h1 className="text-4xl font-extrabold text-center">
-          🏋🏼‍♂️ Strong PR Dashboard
+        <div className="flex flex-col sm:flex-row justify-between items-center mb-6">
+          <h1 className="text-2xl sm:text-4xl font-extrabold text-center mb-4 sm:mb-0">
+            🏋🏼‍♂️ Strong PR Dashboard
           </h1>
-          <div className="flex space-x-4">
+          <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4">
             <select
               value={timeFrame}
               onChange={(e) => setTimeFrame(e.target.value)}
-              className={`p-2 rounded-lg border ${
+              className={`p-2 rounded-lg border w-full sm:w-auto ${
                 theme === "light"
                   ? "bg-white text-black border-gray-300"
                   : "bg-gray-800 text-white border-gray-600"
@@ -275,13 +275,13 @@ export default function Dashboard() {
             </select>
             <button
               onClick={toggleTheme}
-              className="bg-indigo-500 text-white py-2 px-4 rounded-lg shadow-md hover:bg-indigo-600 transition"
+              className="w-full sm:w-auto bg-indigo-500 text-white py-2 px-4 rounded-lg shadow-md hover:bg-indigo-600 transition"
             >
               Toggle Theme
             </button>
             <button
               onClick={handleLogout}
-              className="bg-red-500 text-white py-2 px-4 rounded-lg shadow-md hover:bg-red-600 transition"
+              className="w-full sm:w-auto bg-red-500 text-white py-2 px-4 rounded-lg shadow-md hover:bg-red-600 transition"
             >
               Logout
             </button>
